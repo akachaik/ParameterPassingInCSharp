@@ -84,6 +84,7 @@ namespace ParameterPassingTests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
         public void Reference_Types_Passed_By_Reference()
         {
             StringBuilder sb1 = new StringBuilder("hello");
